@@ -1,0 +1,24 @@
+body {
+  background: no-repeat center/cover url("https://images.unsplash.com/photo-1429032021766-c6a53949594f?q=80&fm=jpg&s=e86a69acddf29299852f1e99baf38918");
+  color: #c8c8c8;
+  text-shadow: 1px 1px 2px black;
+}
+
+
+#welcome {
+  text-align: center;
+  padding: 10em 0;
+
+}
+
+#welcome h1 {
+  margin-bottom: 2em;
+  font-size: 4em;
+}
+
+#welcome a {
+  padding: 0 1em;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #cbe3e8;
+}

@@ -44,3 +44,7 @@ post("/tasks") do
   @task.save()
   erb(:success)
 end
+
+# get('/delete_task/:id') do
+#
+# end
