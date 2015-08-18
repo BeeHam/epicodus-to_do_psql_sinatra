@@ -4,6 +4,7 @@ also_reload("lib/**/*.rb")
 require("./lib/task")
 require('./lib/list')
 require('pg')
+require('pry')
 
 DB = PG.connect({:dbname=> 'to_do_test'})
 
@@ -38,7 +39,8 @@ post("/tasks") do
   list_id = params.fetch("list_id").to_i()
   due = params.fetch("due")
   @list = List.find(list_id)
-  @task = Task.new({:description => description, :list_id => list_id, :due => due})
+  # binding.pry
+  @task = Task.new({:description => description, :list_id => list_id, :due => due, :id => nil})
   @task.save()
   erb(:success)
 end
