@@ -22,3 +22,7 @@ body {
   font-size: 1.5em;
   color: #cbe3e8;
 }
+
+#welcome a:hover {
+  color: white;
+}
